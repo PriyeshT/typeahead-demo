@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const nodeEnv = process.env.NODE_ENV || 'production';
 
 module.exports = {
@@ -42,6 +43,11 @@ module.exports = {
 		new ExtractTextPlugin({ // define where to save the file
 	      filename: '[name].css',
 	      allChunks: true,
+	    }),
+
+	    new HtmlWebpackPlugin({
+	    	filename: 'index.html',
+	    	template: './src/index.html'
 	    })
 	]
 }
