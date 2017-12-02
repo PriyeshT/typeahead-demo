@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "server": "browser-sync start --directory --server --files '**/*.html *.css *.js'",
-    "start": "./node_modules/webpack/bin/webpack.js -p --progress && node server.js",
+    "start": "webpack --progress && node server.js",
     "dev": "webpack --progress --watch"
   },
   "repository": {
