@@ -49,5 +49,10 @@ module.exports = {
 	    	filename: 'index.html',
 	    	template: './src/index.html'
 	    })
-	]
+	],
+	devServer: {
+		inline: true,
+		contentBase: './build',
+		port: 5000
+	}
 }

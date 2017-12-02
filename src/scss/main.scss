@@ -37,6 +37,15 @@ h1 {
 	width: 100%;
 }
 
+label {
+	display: inline-block;
+	width: 100%;
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 2em;
+	line-height: 1.5;
+	padding: 5px 8px;
+}
+
 .typeahead-location {
 	position: relative;
 	background-color: rgba(0,0,0,0);
@@ -50,7 +59,8 @@ h1 {
 }
 
 .twitter-typeahead {
-	width: 80%;
+	width: 100%;
+	margin-top: 10px;
 }
 
 .btn--search {
@@ -60,11 +70,15 @@ h1 {
 	line-height: 1.5;
 	color: #ccc;
 	position: absolute;
+	top: 85px;
+	right: 15px;
+	background-color: transparent;
 }
 
 .tt-menu {
 	background-color: #ccc;
 	border: 1px solid rgb(2,78,106);
+	width: 100%;
 }
 
 .tt-suggestion {

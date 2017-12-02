@@ -19,7 +19,7 @@ $(() => {
 			filter: (data) => {
 				return $.map(data.results, (result) => {
 					return {
-						value: result.SEARCHVAL,
+						value: result.ADDRESS,
 						lat: result.LATITUDE,
 						lon: result.LONGITUDE
 					};

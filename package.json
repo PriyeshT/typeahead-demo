@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "server": "browser-sync start --directory --server --files '**/*.html *.css *.js'",
-    "start": "webpack --progress --watch"
+    "start": "./node_modules/webpack/bin/webpack.js -p --progress && node server.js",
+    "dev": "webpack --progress --watch"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.18.13",
     "css-loader": "^0.28.7",
+    "express": "^4.16.2",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
