@@ -5,11 +5,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Typeahead Demo</title>
 	<link rel="stylesheet" href="../build/main.css">
+	<script src="https://use.fontawesome.com/8b7b9f0e41.js"></script>
 </head>
 <body>
-	<h1 class="title">Typeahead, Bloodhound and OneMap 2.0 Demo</h1>
+	<div class="container">
+		<h1 class="title">Typeahead, Bloodhound and OneMap 2.0 Demo</h1>
 
-	<p>By - Priyesh Tungare</p>
+		<div class="wrapper">
+			<label for="location">Search For Location: </label>
+			<input type="text" name="location" id="location" class="typeahead-location">
+			<button type="button" class="btn btn--search">
+				<i class="fa fa-search fa-2x"></i>
+			</button>
+		</div>
+	</div>
 
 	<script type="text/javascript" src="../build/bundle.js"></script>
 </body>
